@@ -3,6 +3,11 @@ A javaFX-based dummy chatbot, which incorporates web-scraping to fetch informati
 </br>
 This project was my first JavaFX application. The only goal of the project was to create a messaging app like interface and provide some functionality.
 
+# Note
+The **IntelliJ IDE** was used and the platform was **Ubuntu 22.04.1** while **updating the project**.
+</br>
+JDK Version : openjdk 18.0.2-ea
+
 # Features
 As said before, it is a dummy project. This doesn't have any useful functionality.
 </br>
