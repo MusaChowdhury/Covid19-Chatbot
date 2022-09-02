@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musachowdhury.chatbot.Controller">
+    <center>
+        <ListView fx:id="list" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <AnchorPane style="-fx-background-color: #404040;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField id="inbox" fx:id="input" layoutX="12.0" layoutY="4.0" onAction="#input" onMouseClicked="#clear" text="Type here to ask anything" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="72.22086086673059" AnchorPane.topAnchor="10.0" />
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="194.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="10.0">
+                    <image>
+                        <Image url="@../icon/arrow.png" />
+                    </image>
+                </ImageView>
+                <Button id="send" fx:id="send" layoutX="194.0" layoutY="2.0" mnemonicParsing="false" onAction="#input" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: null;" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="10.0" />
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="main_hook" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="583.0" style="-fx-background-color: dimgray;" xmlns="http://javafx.com/javafxl" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musachowdhury.chatbot.Controller">
+    <left>
+        <VBox minWidth="236.0" prefHeight="400.0" prefWidth="254.0" spacing="10.0" style="-fx-background-color: #404040;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" minWidth="205.0" prefHeight="105.0" prefWidth="214.0" spacing="5.0">
+                    <children>
+                        <ImageView fitHeight="62.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/bot.png" />
+                            </image>
+                        </ImageView>
+                        <Label style="-fx-background-color: transparent; -fx-font-size: 17px; -fx-text-fill: linear-gradient(to right,#8803fc, #e303fc); -fx-font-family: Verdana;" text="Chatty" />
+                    </children>
+                </HBox>
+                <AnchorPane prefHeight="39.0" prefWidth="205.0" style="-fx-border-color: white; -fx-border-width: 3;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="83.0" layoutY="20.0" prefHeight="23.0" prefWidth="65.0" style="-fx-text-fill: white; -fx-font-size: 15px;" text="Chat Box">
+                            <font>
+                                <Font name="Bodoni MT" size="11.779141426086426" />
+                            </font></Label>
+                        <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/chat.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="chatbox" mnemonicParsing="false" onAction="#show" prefHeight="54.0" prefWidth="241.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="39.0" prefWidth="165.0" style="-fx-border-color: white; -fx-border-width: 3;">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="20.0" prefHeight="23.0" prefWidth="65.0" style="-fx-text-fill: white; -fx-font-size: 15px;" text="News" />
+                        <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/newspaper.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="nws" layoutX="5.0" layoutY="11.0" mnemonicParsing="false" onAction="#news" prefHeight="46.0" prefWidth="307.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="58.0" prefWidth="316.0" style="-fx-border-color: white; -fx-border-width: 3;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="83.0" layoutY="20.0" prefHeight="23.0" prefWidth="65.0" style="-fx-text-fill: white; -fx-font-size: 15px;" text="About" />
+                        <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icon/info.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="3.0" layoutY="8.0" mnemonicParsing="false" onAction="#about" prefHeight="52.0" prefWidth="303.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets left="20.0" right="20.0" top="5.0" />
+            </padding>
+            <opaqueInsets>
+                <Insets bottom="20.0" left="20.0" right="20.0" />
+            </opaqueInsets>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane id="welcome" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

@@ -1,0 +1,81 @@
+#back {
+    -fx-background-color : null;
+    -fx-background-image : url("../icon/back.png");
+    -fx-background-size: cover, auto;
+    -fx-background-position: center center;
+}
+#front {
+    -fx-background-color : null;
+    -fx-background-image : url("../icon/front.png");
+    -fx-background-size: cover, auto;
+    -fx-background-position: center center;
+}
+#reload {
+    -fx-background-color : null;
+    -fx-background-image : url("../icon/home.png");
+    -fx-background-size: cover, auto;
+    -fx-background-position: center center;
+}
+.list-view  {
+    -fx-background-image : url("../icon/background.png");
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: cover, auto;
+    -fx-padding: 1px;
+}
+.list-cell {
+    -fx-background-color: null;
+}
+.scroll-bar:vertical {
+
+    -fx-background-radius: 5px;
+    -fx-background-color: transparent;
+
+}
+.scroll-bar:vertical .thumb{
+
+    -fx-background-radius: 5px;
+    -fx-background-color : linear-gradient(to right,#ff6a00, #eb8934);//black;//linear-gradient(to right,#790f99, #882bcf)//linear-gradient(to right,#eb4034, #eb8934);
+
+}
+.list-view .increment-button ,.list-view .decrement-button {
+    -fx-background-color: transparent;
+	-fx-border-color:transparent;
+}
+#send {
+    -fx-background-image : url("../icon/arrow.png");
+    -fx-background-color : null;
+
+}
+#msg {
+    -fx-background-radius: 10px;
+    -fx-background-color: #000000;
+    -fx-text-fill : #ffffff;
+    -fx-label-padding: 15px 10px 10px 10px ;
+    //-fx-text-alignment: right;
+    -fx-font: bold italic 12px "Arial";
+}
+#inbox {
+    -fx-background-radius: 25px;
+    -fx-background-color: #ffffff;//linear-gradient(to right,#f2115c, #eb0ed9);
+    -fx-border-radius: 25px;
+    -fx-border-color: #ffffff;
+    -fx-border-width : 3px;
+    -fx-text-fill : #000000;
+    -fx-font: bold 12px "Arial";
+}
+
+#welcome
+{
+    -fx-background-image : url("../icon/welcome.jpg");
+    //-fx-background-repeat : no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: cover, auto;
+}
+
+
+
+
+
+
+
